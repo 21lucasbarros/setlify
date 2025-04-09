@@ -213,3 +213,14 @@ button:disabled {
 .hidden {
   display: none;
 }
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.thanks i {
+  font-size: 2rem;
+}
