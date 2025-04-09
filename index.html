@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setlify</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main-content" class="container">
+      <div class="content-left">
+        <div class="header">
+          <i class="ri-book-line"></i>
+          <h1>Setlify</h1>
+        </div>
+        <h2>Aprenda a criar o setup perfeito para suas redes sociais</h2>
+        <div class="features">
+          <div class="feature-item">
+            <i class="ri-macbook-line"></i>
+            <p>Guia completo de equipamentos</p>
+          </div>
+          <div class="feature-item">
+            <i class="ri-lightbulb-line"></i>
+            <p>Dicas de iluminação profissional</p>
+          </div>
+          <div class="feature-item">
+            <i class="ri-video-on-line"></i>
+            <p>Configurações para streaming</p>
+          </div>
+        </div>
+        <img
+          src="./assets/setlify-img.png"
+          alt="Setlify Image"
+          class="setup-image"
+        />
+      </div>
+
+      <div class="form-container">
+        <h3>Baixe agora seu e-book gratuito</h3>
+        <form id="ebook-form">
+          <div class="form-group">
+            <label for="name">Nome completo</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome"
+              required
+            />
+            <span id="name-error" class="error hidden">Nome é obrigatório</span>
+          </div>
+
+          <div class="form-group">
+            <label for="age">Idade</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder="Sua idade"
+              min="18"
+              max="100"
+              required
+            />
+            <span id="age-error" class="error hidden"
+              >Idade válida é obrigatória</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="(00) 00000-0000"
+              required
+            />
+            <span id="phone-error" class="error hidden"
+              >Telefone é obrigatório</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="cep">CEP</label>
+            <input
+              type="text"
+              id="cep"
+              name="cep"
+              placeholder="00000-000"
+              required
+            />
+            <span id="cep-error" class="error hidden">CEP é obrigatório!</span>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="street">Rua</label>
+              <input
+                type="text"
+                id="street"
+                name="street"
+                placeholder="Sua rua"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="number">Número</label>
+              <input
+                type="text"
+                id="number"
+                name="number"
+                placeholder="Nº"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="neighborhood">Bairro</label>
+            <input
+              type="text"
+              id="neighborhood"
+              name="neighborhood"
+              placeholder="Seu bairro"
+              required
+            />
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="city">Cidade</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Sua cidade"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="state">Estado</label>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                placeholder="UF"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" id="submit-btn">Baixar E-Book Grátis</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
